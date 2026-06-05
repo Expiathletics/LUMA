@@ -1,0 +1,42 @@
+# LUMA Backend Dependencies
+# Install: pip install -r requirements.txt
+
+# API Framework
+fastapi==0.111.0
+uvicorn==0.30.0
+python-multipart==0.0.9
+python-dotenv==1.0.1
+pydantic==2.7.0
+aiofiles==23.2.1
+
+# AI Agent Orchestration (Jensen's loop — observe/reason/act)
+langgraph>=0.1.0
+langchain-core>=0.2.0
+langchain-anthropic>=0.1.0   # Claude integration
+
+# Document Extraction — LAYERED APPROACH
+# Layer 1: AWS Textract (best for standardized forms: death certs, SSA-721, VA forms)
+boto3==1.34.0                # AWS SDK
+
+# Layer 2: Unstructured (fallback for unknown/messy document layouts)
+unstructured==0.14.0
+
+# Field Classification
+spacy==3.7.4                 # Named Entity Recognition
+
+# ML Model Training (Phase 2)
+xgboost==2.0.3              # Structured field prediction
+scikit-learn==1.5.0         # Label encoding, train/test split
+numpy==1.26.4
+
+# PDF Form Filling (replaces Docassemble)
+pypdf==4.2.0                # Read/write PDF form fields
+reportlab==4.2.0            # Generate new PDFs from data
+pymupdf==1.24.3             # Complex PDF manipulation (fallback)
+
+# Database
+supabase==2.4.0             # Production database
+# sqlite3 is built into Python — used for MVP local dev
+
+# Utilities
+httpx==0.27.0

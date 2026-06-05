@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+dist/
+
+# Environment (NEVER commit secrets)
+.env
+.env.local
+
+# Database / Generated files
+data/cases/
+data/models/
+uploads/
+*.db
+
+# macOS
+.DS_Store
+
+# Large lib folders (too big for GitHub)
+libs/
+
+# VS Code
+.vscode/
