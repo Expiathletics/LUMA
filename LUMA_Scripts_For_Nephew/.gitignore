@@ -1,0 +1,16 @@
+# NEVER commit these
+.env
+.venv/
+venv/
+
+# Generated files — do not commit
+luma/models/
+luma/data/
+__pycache__/
+*.pyc
+*.pkl
+*.pickle
+
+# OS files
+.DS_Store
+Thumbs.db
