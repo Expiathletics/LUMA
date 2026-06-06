@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 *.pyo
+*.pkl
+*.pickle
 .venv/
 venv/
 env/
@@ -17,13 +19,14 @@ dist/
 .env.local
 
 # Database / Generated files
-data/cases/
-data/models/
+data/
+models/
 uploads/
 *.db
 
-# macOS
+# OS files
 .DS_Store
+Thumbs.db
 
 # Large lib folders (too big for GitHub)
 libs/
